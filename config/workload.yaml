@@ -1,14 +1,14 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: nordnet-portal-demo
+  name: nordnet-portal-mathys
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: nordnet-portal-demo
+    app.kubernetes.io/part-of: nordnet-portal-mathys
     apps.tanzu.vmware.com/has-tests: "true"
 spec:
   source:
     git:
-      url: https://github.com/emanzat/nordnet-demo.git
+      url: https://github.com/mqthys62/nordnet-kubernetes
       ref:
-        branch: demo
+        branch: test
